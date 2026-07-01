@@ -1,0 +1,22 @@
+# brain.manifest.yaml — child mount (thin)
+# Projection file: the source of truth remains in the mother repo.
+schema: brain-manifest/v1
+manifest_kind: child
+mother_repo: o00362002/Human-AI-Collaboration-Brain
+mother_architecture: compact_five_layer
+level: Level 3B
+
+architecture_layers:
+  - Brain Core / Charter
+  - Interface & Integration Layer
+  - Memory Layer
+  - Context Routing Layer
+  - Execution Edge
+
+mount:
+  mode: thin
+  role: execution_interface
+  layer_depth: level_scaled
+
+contract: AGENTS.md
+reality_check: bash check_mount_integrity.sh
